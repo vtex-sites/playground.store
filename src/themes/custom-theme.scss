@@ -8,7 +8,7 @@
     // --------------------------------------------------------
     // Colors (Branding Core)
     // --------------------------------------------------------
-    --fs-color-main-0: #f8feec;
+    --fs-color-main-0: #fff;
     // --------------------------------------------------------
     // Typography (Branding Core)
     // --------------------------------------------------------
@@ -33,5 +33,9 @@
     // FS UI Components
     // --------------------------------------------------------
     // Add here the customizations for FastStore UI components.
+
+    [data-fs-hero][data-fs-hero-color-variant="main"] {
+      --fs-hero-main-bkg-color: #000;
+    }
   }
 }
