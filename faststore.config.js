@@ -2,7 +2,7 @@ module.exports = {
   seo: {
     title: "FastStore Playground",
     description: "A fast and performant store framework",
-    titleTemplate: "%s | FastStore",
+    titleTemplate: "%s | Playground",
     author: "FastStore",
   },
 
