@@ -54,5 +54,40 @@
         }
       }
     }
+  },
+  {
+    "name": "AlertWithImage",
+    "schema": {
+      "title": "Alert with image",
+      "description": "Add an Alert that has an Image as an icon",
+      "type": "object",
+      "required": ["src", "alt", "content", "dismissible"],
+      "properties": {
+        "src": {
+          "type": "string",
+          "title": "Image source",
+          "description": "Source of the Alert icon image"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Image alt text",
+          "description": "Alt text for the Alert icon image"
+        },
+        "content": { "type": "string", "title": "Content" },
+        "link": {
+          "title": "Link",
+          "type": "object",
+          "properties": {
+            "text": { "type": "string", "title": "Link Text" },
+            "to": { "type": "string", "title": "Action link" }
+          }
+        },
+        "dismissible": {
+          "type": "boolean",
+          "default": false,
+          "title": "Is dismissible?"
+        }
+      }
+    }
   }
 ]
