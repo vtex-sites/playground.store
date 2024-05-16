@@ -1,3 +1,8 @@
 import CustomIconsAlert from "./sections/CustomIconsAlert/CustomIconsAlert";
+import AlertWithImage from "./sections/AlertWithImage/AlertWithImage";
 
-export default { CustomIconsAlert };
+const sections = {
+  CustomIconsAlert,
+  AlertWithImage,
+};
+export default sections;
