@@ -32,8 +32,6 @@ export const ContactForm = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [statusMessage, setStatusMessage] = useState("");
-
   const onSubmit = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
@@ -54,8 +52,6 @@ export const ContactForm = () => {
         setEmail("");
         setSubject("");
         setMessage("");
-
-        setStatusMessage(response.data.submitContactForm.message);
       } catch (error) {
         console.error(error);
       }
