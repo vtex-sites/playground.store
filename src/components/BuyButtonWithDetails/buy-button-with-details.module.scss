@@ -1,0 +1,16 @@
+.buyButtonWithDetails {
+  > span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--fs-spacing-4);
+    text-align: center;
+    font-size: var(--fs-text-size-1);
+  }
+
+  [data-fs-button] {
+    width: 100%;
+    [data-fs-button-wrapper] {
+      background-color: var(--fs-color-neutral-7);
+    }
+  }
+}
