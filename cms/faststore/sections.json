@@ -89,5 +89,14 @@
         }
       }
     }
+  },
+  {
+    "name": "ContactForm",
+    "schema": {
+      "title": "ContactForm",
+      "description": "Adds a contact form",
+      "type": "object",
+      "properties": {}
+    }
   }
 ]
