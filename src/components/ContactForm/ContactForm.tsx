@@ -15,6 +15,8 @@ import {
   TextArea as UITextArea,
 } from "@faststore/ui";
 
+import styles from "./contact-form.module.scss";
+
 export const mutation = gql(`
   mutation SubmitContactForm($data: ContactFormInput!) {
     submitContactForm(input: $data) {
@@ -59,9 +61,15 @@ export const ContactForm = () => {
   );
 
   return (
-    <section>
-      <form onSubmit={onSubmit}>
+    <section className={styles.contactForm}>
+      <div>
         <h2>Contact Us</h2>
+        <p>
+          Need to get in touch with us? Please fill out the form, we'll get in
+          touch with you soon.
+        </p>
+      </div>
+      <form onSubmit={onSubmit}>
         <UIInputField
           id="name"
           label="Name"
@@ -82,11 +90,13 @@ export const ContactForm = () => {
         />
         <UITextArea
           id="message"
-          placeholder="Message"
+          placeholder="Write here your message."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <UIButton type="submit">Send</UIButton>
+        <UIButton type="submit" variant="primary">
+          Send
+        </UIButton>
       </form>
     </section>
   );
