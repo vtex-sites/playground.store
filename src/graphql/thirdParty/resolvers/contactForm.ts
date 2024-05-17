@@ -14,9 +14,10 @@ const contactFormResolver = {
 
       try {
         const response = await fetch(
-          "https://playground.vtexcommercestable.com.br/api/dataentities/ContactForm/documents",
+          "https://playground.vtexcommercestable.com.br/api/dataentities/ContactForm/documents?_schema=contactForm",
           {
             method: "POST",
+            headers:{"Content-Type": "application/json"},
             body: JSON.stringify(input),
           }
         );
