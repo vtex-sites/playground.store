@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 
 // We'll create a new section called `ContactForm` that will be place in the landing page called Contact Us
 // more instructions about creating new section: refer to https://developers.vtex.com/docs/guides/faststore/building-sections-creating-a-new-section
@@ -26,17 +26,36 @@ export const mutation = gql(`
 `);
 
 export const ContactForm = () => {
-  const [submitContactForm, {}] = useLazyQuery(mutation, {});
+  const [submitContactForm, { data, error }] = useLazyQuery(mutation, {
+    data: { name: "", email: "", subject: "", message: "" },
+  });
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  useEffect(() => {
+    // Handle submitting contact form mutation errors
+    if (error) {
+      console.error(error);
+    }
+
+    // Choose what to do when successfuly submitting the form and how to display the success message
+    if (data) {
+      console.log("Success 🎉 ~ submitContactForm response data: ", data);
+
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    }
+  }, [data, error]);
+
   const onSubmit = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
 
-      const data = {
+      const formValues = {
         name,
         email,
         subject,
@@ -44,14 +63,7 @@ export const ContactForm = () => {
       };
 
       try {
-        const response = await submitContactForm({
-          data,
-        });
-
-        setName("");
-        setEmail("");
-        setSubject("");
-        setMessage("");
+        await submitContactForm({ data: formValues });
       } catch (error) {
         console.error(error);
       }
