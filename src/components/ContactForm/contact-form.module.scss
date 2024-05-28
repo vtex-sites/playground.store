@@ -1,5 +1,10 @@
 .contactForm {
-  // Since ContactForm is a new section, fs/ui styles were not applied. You can apply it manually by importing the styles. Refer to https://faststore-site-git-docs-override-version-2-faststore.vercel.app/docs/customizing/importing-styles-to-faststore-ui-components#step-4-add-the-styles
+  /**
+   * TODO: Review documentation link ref
+   * Since ContactForm is a new section, @faststore/ui styles were not applied.
+   * You can apply it manually by importing the styles. Refer to https://faststore-site-git-docs-override-version-2-faststore.vercel.app/docs/customizing/importing-styles-to-faststore-ui-components#step-4-add-the-styles
+   */
+
   @import "@faststore/ui/src/components/atoms/Button/styles.scss";
   @import "@faststore/ui/src/components/atoms/Input/styles.scss";
   @import "@faststore/ui/src/components/molecules/InputField/styles.scss";
