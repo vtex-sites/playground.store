@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState } from "react";
 
 // We'll create a new section called `ContactForm` that will be place in the landing page called Contact Us
 // more instructions about creating new section: refer to https://developers.vtex.com/docs/guides/faststore/building-sections-creating-a-new-section
@@ -29,30 +29,14 @@ export const ContactForm = () => {
   const [submitContactForm, { data, error }] = useLazyQuery(mutation, {
     data: { name: "", email: "", subject: "", message: "" },
   });
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    // Handle submitting contact form mutation errors
-    if (error) {
-      console.error(error);
-    }
-
-    // Choose what to do when successfuly submitting the form and how to display the success message
-    if (data) {
-      console.log("Success 🎉 ~ submitContactForm response data: ", data);
-
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    }
-  }, [data, error]);
-
   const onSubmit = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
+    (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
 
       const formValues = {
@@ -62,13 +46,24 @@ export const ContactForm = () => {
         message,
       };
 
-      try {
-        await submitContactForm({ data: formValues });
-      } catch (error) {
+      submitContactForm({ data: formValues });
+
+      // Handle submitting contact form mutation errors
+      if (error) {
         console.error(error);
       }
+
+      // Choose what to do when successfuly submitting the form and how to display the success message
+      if (data) {
+        console.log("Success 🎉 ~ submitContactForm response data: ", data);
+
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      }
     },
-    [submitContactForm, name, email, subject, message]
+    [submitContactForm]
   );
 
   return (
