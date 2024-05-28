@@ -9,6 +9,7 @@ type SubmitContactFormData = {
 
 const contactFormResolver = {
   Mutation: {
+    // The resolver to submit the contact form data, fetch only the data you need (https://developers.vtex.com/docs/guides/faststore/api-extensions-overview#best-practices-for-fetching-data)
     submitContactForm: async (_: never, data: SubmitContactFormData) => {
       const { input } = data;
 
@@ -17,7 +18,9 @@ const contactFormResolver = {
           "https://playground.vtexcommercestable.com.br/api/dataentities/ContactForm/documents?_schema=contactForm",
           {
             method: "POST",
-            headers:{"Content-Type": "application/json"},
+            headers: {
+              "Content-Type": "application/json",
+            },
             body: JSON.stringify(input),
           }
         );
@@ -26,13 +29,9 @@ const contactFormResolver = {
           throw new Error("Error while sending the message");
         }
 
-        return {
-          message: "Your message was sent successfully!",
-        };
+        return { message: "Your message was sent successfully!" };
       } catch (error) {
-        return {
-          message: error,
-        };
+        return { message: error };
       }
     },
   },
