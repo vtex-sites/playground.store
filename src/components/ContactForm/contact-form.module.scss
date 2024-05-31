@@ -1,0 +1,50 @@
+.contactForm {
+  /**
+   * Since ContactForm is a new section, @faststore/ui styles were not applied.
+   * You can apply it manually by importing the styles. Refer to https://developers.vtex.com/docs/guides/faststore/using-themes-importing-ui-components-styles
+   */
+
+  @import "@faststore/ui/src/components/atoms/Button/styles.scss";
+  @import "@faststore/ui/src/components/atoms/Input/styles.scss";
+  @import "@faststore/ui/src/components/molecules/InputField/styles.scss";
+
+  @include layout-content;
+
+  // You can style your components using our design tokens, learn more here: https://developers.vtex.com/docs/guides/faststore/global-tokens-overview
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--fs-spacing-2);
+
+  > div,
+  form {
+    margin: var(--fs-spacing-6) 0 var(--fs-spacing-3);
+  }
+
+  > div {
+    p {
+      width: 80%;
+    }
+  }
+
+  h2 {
+    font-family: var(--fs-text-face-title);
+    font-size: var(--fs-text-size-title-page);
+    margin: var(--fs-spacing-6) 0 var(--fs-spacing-3);
+  }
+
+  [data-fs-input-field] {
+    margin: var(--fs-spacing-3) 0;
+  }
+
+  [data-fs-textarea] {
+    width: 100%;
+    margin-bottom: var(--fs-spacing-4);
+    padding: var(--fs-spacing-2) var(--fs-spacing-2) 0;
+    height: 150px;
+  }
+
+  [data-fs-button] {
+    min-width: 250px;
+    margin: auto;
+  }
+}
