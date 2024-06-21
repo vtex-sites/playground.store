@@ -4,7 +4,7 @@ This project serves as a compilation of examples that highlight the fundamental 
 
 Here you'll find examples of the following features:
 
-- Section Override V2
+- [Section Override V2](https://developers.vtex.com/docs/guides/faststore/overrides-overview)
 - [API Extension](https://developers.vtex.com/docs/guides/faststore/api-extensions-overview)
 
 ### Naming Conventions
