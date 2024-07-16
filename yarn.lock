@@ -1180,10 +1180,10 @@
   resolved "https://registry.yarnpkg.com/@faststore/components/-/components-3.0.81.tgz#7839c01e345bfadd50d40cfb6e5eb753d108319c"
   integrity sha512-YrS0w8+KWaZHTYKkCa19FA9LYZGTLR2qjI6GTTpQPZTrxvot854f8QulyZAu36s6+INF1R2hWzKMU0FjlJ7+ow==
 
-"@faststore/core@3.0.81":
-  version "3.0.81"
-  resolved "https://registry.yarnpkg.com/@faststore/core/-/core-3.0.81.tgz#8170039b644e35a62c34b10831aeeb2a74430d64"
-  integrity sha512-YdiFJZM6WmmSXkvlS4Qq2iAV3qVqiqHc+dNWpFVp9CUyBGMVHaNIEN5PwP4wk4nyHh+I2DCF5PgVzn1TlNbRxA==
+"@faststore/core@3.0.84":
+  version "3.0.84"
+  resolved "https://registry.yarnpkg.com/@faststore/core/-/core-3.0.84.tgz#e3e9c145a3f9cfb72f91cdc418a332745e36cb45"
+  integrity sha512-F+mhaeX29ut2k0XfO3Dt2bl1jlx8aqRqmyqjF+BXueK6Mpyjgtr/INNQYqlSEZQqYS2haZpuwDZmBP48r4wHGg==
   dependencies:
     "@builder.io/partytown" "^0.6.1"
     "@envelop/core" "^1.2.0"
@@ -1193,7 +1193,7 @@
     "@faststore/api" "^3.0.76"
     "@faststore/components" "^3.0.81"
     "@faststore/graphql-utils" "^3.0.68"
-    "@faststore/sdk" "^3.0.68"
+    "@faststore/sdk" "^3.0.84"
     "@faststore/ui" "^3.0.81"
     "@graphql-codegen/cli" "^5.0.2"
     "@graphql-codegen/client-preset" "^4.2.6"
@@ -1243,10 +1243,10 @@
   resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.0.47.tgz#bb8101835c19b25991c5d243720b89ff98c74a21"
   integrity sha512-E53R/PRZznpwJw5ajIzk7K2hMb827mgcgs4zcMI0Ss2Ug/4DO6AydKoZuK4P2lkzzlRVPoBPFYHAwBKu2EW4sg==
 
-"@faststore/sdk@^3.0.68":
-  version "3.0.68"
-  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.0.68.tgz#8036dbee89f14d0421f42053cbd61d1573dee661"
-  integrity sha512-XWS5hQhVyLYcZtHai5sNytVzALSxvasVzLyGHoIG8kMjpyxYUQ5fkrI0A3POKewdEYTYFCYdV66SrjoPb/Ruqw==
+"@faststore/sdk@^3.0.84":
+  version "3.0.84"
+  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.0.84.tgz#6c0e70222761ff8586db49fe28d54dd22ee27199"
+  integrity sha512-8lbXAhI4eHWEDPwQ0NsmCJK1yjSAkgE2pOls4mAact+/J252mpYYxfVaVTZYvY5QthgsYCqGnmXs/kHnD1pcKw==
   dependencies:
     idb-keyval "^5.1.3"
 
