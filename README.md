@@ -66,14 +66,14 @@ This example illustrates a common use case for `getOverriddenSection` in FastSto
 Add more icon options to the `Alert`, allowing editors to choose from a wider selection of icons supported by the `@faststore/ui` [iconography](https://developers.vtex.com/docs/guides/faststore/reference-icons#usage) library.
 
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/override-use-cases-adding-more-icon-options-to-the-alert-component)
-- [➡️ Code Example]()
+- [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/sections/CustomIconsAlert)
 
 #### Adding an image to your Alert component
 
 The native Alert section provides an icon prop for customization. It only accepts predefined icons, but you want more control and flexibility over the displayed content. In this example, we'll display a custom image instead.
 
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/override-use-cases-adding-an-image-to-the-alert-component)
-- [➡️ Code Example]()
+- [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/sections/AlertWithImage)
 
 ### [2. API Extensions](https://developers.vtex.com/docs/guides/faststore/api-extensions-overview)
 
@@ -84,14 +84,14 @@ If you need to retrieve data not natively provided by the FastStore API, you can
 This example illustrates the case where customers can see installment details (number, value, payment system) directly on the product page.
 
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/api-extensions-use-cases-adding-installment-information-in-the-product-details-page)
-- [➡️ Code Example]()
+- [➡️ Code Reference](https://github.com/vtex-sites/playground.store/blob/main/src/components/BuyButtonWithDetails/BuyButtonWithDetails.tsx)
 
 #### Adding a contact form to a landing page
 
 This example illustrates how to handle data from a Contact Us form and send it to a third-party API. We will create a Contact Us page with a Contact form.
 
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/api-extensions-use-cases-adding-a-contact-form-to-a-landing-page)
-- [➡️ Code Example]()
+- [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/ContactForm)
 
 ## 🏷️ Naming Conventions in this Project
 
