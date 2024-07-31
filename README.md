@@ -88,7 +88,7 @@ This example illustrates the case where customers can see installment details (n
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/api-extensions-use-cases-adding-installment-information-in-the-product-details-page)
 - [➡️ Code Reference](https://github.com/vtex-sites/playground.store/blob/main/src/components/BuyButtonWithDetails/BuyButtonWithDetails.tsx)
 
-#### Adding a contact form to a landing page
+#### Adding a Contact Form to a Landing Page
 
 This example illustrates how to handle data from a Contact Us form and send it to a third-party API. We will create a Contact Us page with a Contact form.
 
