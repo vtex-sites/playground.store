@@ -31,7 +31,7 @@ As you run the examples, refer to the documentation to understand the concepts a
 
 Clone the repository in your local machine and start exploring:
 
-1. Clone the repository to your local machine:
+1. Open your terminal and clone the repository to your local machine by running the following command:
 
 ```
 git clone https://github.com/vtex-sites/playground.store.git
