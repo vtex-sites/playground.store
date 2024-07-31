@@ -1166,11 +1166,13 @@
     p-limit "^3.1.0"
     sanitize-html "^2.11.0"
 
-"@faststore/cli@3.0.83":
-  version "3.0.83"
-  resolved "https://registry.yarnpkg.com/@faststore/cli/-/cli-3.0.83.tgz#16d4b8cb6bafc478ac695abebd39fd3a880dba3c"
-  integrity sha512-bQrxP10wcg1Kr49Bu6r+B0vQpx28ZkIIZAtbQJSAX67wP1YQB7/W3Gm9eLD+TYn4MVuDx+ST7RDsLnZgI9fjww==
+"@faststore/cli@3.0.90":
+  version "3.0.90"
+  resolved "https://registry.yarnpkg.com/@faststore/cli/-/cli-3.0.90.tgz#88ad22b2fa30e045fd6588526e7d7ca7be08b0a4"
+  integrity sha512-Odo423lMD7GxdpY5phXVuH76wpf9WUejBdijUZ7dE4b2tMkr6X1tcpkOgpp001c8pSpzxQZDuFZkH2WoQ+0IyA==
   dependencies:
+    "@antfu/ni" "^0.21.12"
+    "@faststore/core" "^3.0.89"
     "@inquirer/prompts" "^5.1.2"
     "@oclif/core" "^1.16.4"
     "@oclif/plugin-help" "^5"
@@ -1187,7 +1189,7 @@
   resolved "https://registry.yarnpkg.com/@faststore/components/-/components-3.0.89.tgz#5142570f072aa22125bdd88e27e0190cba02c1ab"
   integrity sha512-f1Ol0ahoWcVJrIZ/sfQoOPV4t/jxm9+U3bKDku19a2qck0I6SOoXUQRSSHEAJMuLsAlfNL4+7AnNGNy7W1/O9Q==
 
-"@faststore/core@3.0.89":
+"@faststore/core@3.0.89", "@faststore/core@^3.0.89":
   version "3.0.89"
   resolved "https://registry.yarnpkg.com/@faststore/core/-/core-3.0.89.tgz#1078667479e92662c0426b29c81b410b2bd2d83e"
   integrity sha512-u6D/xzaben5Rz05Dw5r/m4pIPiUiNRZQIs/oyDWKXsWOSXuN1BQFUihL8+WjoN9EkT940+5f7mHV5YWuuDSQvw==
