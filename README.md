@@ -27,6 +27,8 @@ As you run the examples, refer to the documentation to understand the concepts a
 
 **Experiment and Modify**: Feel free to experiment with the code examples by making modifications. This will help you gain a deeper understanding of how each feature works.
 
+### Cloning the repository
+
 Clone the repository in your local machine and start exploring:
 
 1. Clone the repository to your local machine:
