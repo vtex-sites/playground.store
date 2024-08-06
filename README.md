@@ -72,7 +72,7 @@ Add more icon options to the `Alert`, allowing editors to choose from a wider se
 
 #### Adding an image to your Alert component
 
-The native Alert section provides an icon prop for customization. It only accepts predefined icons, but you want more control and flexibility over the displayed content. In this example, we'll display a custom image instead.
+The native `Alert` section provides an icon prop for customization. It only accepts predefined icons, but you want more control and flexibility over the displayed content. In this example, we'll display a custom image instead.
 
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/override-use-cases-adding-an-image-to-the-alert-component)
 - [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/sections/AlertWithImage)
