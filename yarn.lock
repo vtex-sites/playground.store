@@ -1189,10 +1189,10 @@
   resolved "https://registry.yarnpkg.com/@faststore/components/-/components-3.0.89.tgz#5142570f072aa22125bdd88e27e0190cba02c1ab"
   integrity sha512-f1Ol0ahoWcVJrIZ/sfQoOPV4t/jxm9+U3bKDku19a2qck0I6SOoXUQRSSHEAJMuLsAlfNL4+7AnNGNy7W1/O9Q==
 
-"@faststore/core@3.0.91", "@faststore/core@^3.0.91":
-  version "3.0.91"
-  resolved "https://registry.yarnpkg.com/@faststore/core/-/core-3.0.91.tgz#238ef64fb5797171e8bc56239e68305036c37037"
-  integrity sha512-ZYGrrLhStfyfaJVYbwFYfb2XipnJDTGy4Sl3Ma7ib4gSWOyvCByyFPWN1hvvAqkHxYWWHvYmLC1Op+vilPf9bg==
+"@faststore/core@3.0.93", "@faststore/core@^3.0.91":
+  version "3.0.93"
+  resolved "https://registry.yarnpkg.com/@faststore/core/-/core-3.0.93.tgz#5842fb64f3e804a41b306baa3dc467c0dcb0677d"
+  integrity sha512-lbD7UjdJKAGqzvqGCNzWK2XIA8nwwvI0+HC2DYn2SyJsj5Aai/c5OsqA7tWPahqUUvHAB6SLtdnGjqO15EcvIg==
   dependencies:
     "@antfu/ni" "^0.21.12"
     "@builder.io/partytown" "^0.6.1"
