@@ -108,3 +108,4 @@ In this project, we'll be using the following naming conventions:
 
 - [FastStore Docs](https://developers.vtex.com/docs/guides/faststore)
 - [FastStore Github](https://github.com/vtex/faststore)
+
