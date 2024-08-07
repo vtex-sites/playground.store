@@ -104,6 +104,7 @@ In this project, we'll be using the following naming conventions:
 - Function exports: camelCase, e.g., `getCustomsButtonVariants`
 - Constants: snake_case, e.g., `BUTTON_VARIANTS`
 
+
 ## 📚 Resources
 
 - [FastStore Docs](https://developers.vtex.com/docs/guides/faststore)
