@@ -1251,11 +1251,6 @@
   resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.0.116.tgz#208f8b0588521e888bee813bf7cbcc72dd9bff17"
   integrity sha512-rjczolI7wJGpzoVDM03DHaZ4ocpDJyHJqKnb8wVn9vVodoGmBTbom1kC5Ywv2X53NEtN8Y4E7KKduVpKuJ422A==
 
-"@faststore/lighthouse@^3.0.88":
-  version "3.0.88"
-  resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.0.88.tgz#f168b91df381f6284423ec8b98ad8acf0913420d"
-  integrity sha512-qNb8bmJyHf10ppfpTmJoCidtKVJm4p3lYsg3XWANwQNFJOpdwbzVic8gi8r7z2ejB38Q7oVu6aRMnENzZKKLDA==
-
 "@faststore/sdk@^3.0.116":
   version "3.0.116"
   resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.0.116.tgz#7dae67887912300d08d1afb1a3322d7c82df408c"
