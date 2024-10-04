@@ -1,4 +1,4 @@
-import FaststoreConfig from "../../discovery.config.js";
+import FaststoreConfig from "../../discovery.config";
 
 export const priceFormatter = (value: number) => {
   return value.toLocaleString(FaststoreConfig.session.locale, {
