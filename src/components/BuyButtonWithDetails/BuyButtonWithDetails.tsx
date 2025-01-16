@@ -27,7 +27,7 @@ export function BuyButtonWithDetails(props: ButtonProps) {
       )}
 
       <UIButton {...props} variant="primary">
-        Buy Button X
+        Buy Button
       </UIButton>
     </section>
   );
