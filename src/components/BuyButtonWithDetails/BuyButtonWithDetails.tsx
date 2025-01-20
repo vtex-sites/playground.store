@@ -1,5 +1,5 @@
 import { usePDP } from "@faststore/core";
-import { Button as UIButton, ButtonProps } from "@faststore/ui";
+import { ButtonProps, Button as UIButton } from "@faststore/ui";
 import { priceFormatter } from "../../utils/priceFormatter";
 
 import styles from "./buy-button-with-details.module.scss";
