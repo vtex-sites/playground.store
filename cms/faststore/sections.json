@@ -98,5 +98,21 @@
       "type": "object",
       "properties": {}
     }
+  },
+  {
+    "name": "CustomH1",
+    "schema": {
+      "title": "Custom H1",
+      "description": "Custom H1 configuration",
+      "type": "object",
+      "required": ["skipLazyLoadingSection"],
+      "properties": {
+        "skipLazyLoadingSection": {
+          "title": "Skip lazy loading",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
   }
 ]
