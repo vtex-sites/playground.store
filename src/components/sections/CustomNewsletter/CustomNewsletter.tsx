@@ -22,6 +22,8 @@ import { Section } from "@faststore/core";
 import { useNewsletter_unstable as useNewsletter } from "@faststore/core/experimental";
 import { type FormEvent, useRef } from "react";
 
+// Refer to the analytics module docs for more information: https://developers.vtex.com/docs/guides/faststore/analytics-overview
+
 import { sendAnalyticsEvent, useAnalyticsEvent } from "@faststore/sdk";
 
 interface ArbitraryEvent {
