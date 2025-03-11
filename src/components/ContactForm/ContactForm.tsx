@@ -12,7 +12,7 @@ import { useLazyQuery_unstable as useLazyQuery } from "@faststore/core/experimen
 import {
   InputField as UIInputField,
   Button as UIButton,
-  TextArea as UITextArea,
+  Textarea as UITextArea,
 } from "@faststore/ui";
 
 import styles from "./contact-form.module.scss";
