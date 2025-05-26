@@ -10,8 +10,8 @@ import { gql } from "@faststore/core/api";
 import { useLazyQuery_unstable as useLazyQuery } from "@faststore/core/experimental";
 
 import {
-  InputField as UIInputField,
   Button as UIButton,
+  InputField as UIInputField,
   Textarea as UITextArea,
 } from "@faststore/ui";
 
