@@ -103,7 +103,6 @@ The Analytics module supports sending and receiving different events, allowing y
 
 This example explains how to track user subscriptions by implementing two custom analytics events for a custom newsletter section, `Submit newsletter` and `Submit newsletter success`.
 
-
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/analytics-implementing-custom-newsletter-analytics-events)
 - [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/sections/CustomNewsletter)
 
