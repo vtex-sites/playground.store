@@ -95,6 +95,18 @@ This example illustrates how to handle data from a Contact Us form and send it t
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/api-extensions-use-cases-adding-a-contact-form-to-a-landing-page)
 - [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/ContactForm)
 
+### [3. FastStore Analytics](https://developers.vtex.com/docs/guides/faststore/analytics-overview)
+
+The Analytics module supports sending and receiving different events, allowing you to implement custom event types and override default ones.
+
+#### Implementing custom newsletter analytics events
+
+This example explains how to track user subscriptions by implementing two custom analytics events for a custom newsletter section, `Submit newsletter` and `Submit newsletter success`.
+
+
+- [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/analytics-implementing-custom-newsletter-analytics-events)
+- [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/sections/CustomNewsletter)
+
 ## 🏷️ Naming Conventions in this Project
 
 In this project, we'll be using the following naming conventions:
