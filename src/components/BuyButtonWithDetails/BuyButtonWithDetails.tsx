@@ -1,5 +1,5 @@
 import { usePDP } from "@faststore/core";
-import { Button as UIButton, ButtonProps } from "@faststore/ui";
+import { ButtonProps, Button as UIButton } from "@faststore/ui";
 import { priceFormatter } from "../../utils/priceFormatter";
 
 import styles from "./buy-button-with-details.module.scss";
@@ -12,7 +12,7 @@ export function BuyButtonWithDetails(props: ButtonProps) {
 
   // We will show one of the installments option available if the product has interest free (You should go further and show all available installments options)
   const installment = context?.data?.product?.availableInstallments[0];
-  const interestFree = installment.installmentInterest === 0 ?? false;
+  const interestFree = installment?.installmentInterest === 0;
 
   return (
     <section className={styles.buyButtonWithDetails}>
