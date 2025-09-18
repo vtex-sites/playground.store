@@ -28,7 +28,8 @@ import { sendAnalyticsEvent, useAnalyticsEvent } from "@faststore/sdk";
 
 interface ArbitraryEvent {
   name: string;
-  params: string;
+  isEcommerceEvent?: boolean;
+  params: Record<string, any>;
 }
 
 type SubscribeMessage = {
@@ -135,7 +136,10 @@ function CustomNewsletter({
       // send event start
       sendAnalyticsEvent<ArbitraryEvent>({
         name: "Submit Newsletter",
-        params: "test",
+        params: {
+          form_location: "custom_newsletter_section",
+          user_agent: navigator.userAgent,
+        },
       });
 
       const data = await subscribeUser({
@@ -149,7 +153,7 @@ function CustomNewsletter({
         // send event start
         sendAnalyticsEvent<ArbitraryEvent>({
           name: "Submit newsletter success",
-          params: "test",
+          params: { campaign: "newsletter_signup", source: "organic" },
         });
 
         pushToast({
