@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  FastStore Playground
+  FastStore Playground 
 </h1>
 
 This project serves as a compilation of examples that highlight the fundamental features of our framework. It is designed to complement our [official documentation](https://developers.vtex.com/docs/guides/faststore/docs-what-is-faststore), providing users with practical demonstrations of how to leverage from FastStore framework.
