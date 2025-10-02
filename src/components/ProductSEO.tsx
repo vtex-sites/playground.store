@@ -1,7 +1,7 @@
 import { usePDP } from "@faststore/core";
 import { ProductJsonLd } from "next-seo";
 
-export function ProductSEO() {
+export function CustomProductSEO() {
   // FastStore exposes the data that comes from FastStore API along with FastStore API Extensions inside a provider. Use the usePDP hook to access data from a Product Detail Page (PDP). Refer to: https://developers.vtex.com/docs/guides/faststore/api-extensions-consuming-api-extensions
   const context = usePDP();
   const product = context?.data?.product;
@@ -19,4 +19,4 @@ export function ProductSEO() {
   );
 }
 
-export default ProductSEO;
+export default CustomProductSEO;
