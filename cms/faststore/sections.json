@@ -232,5 +232,21 @@
         }
       }
     }
+  },
+  {
+    "name": "CustomProductSEOSection",
+    "schema": {
+      "title": "Custom Product SEO",
+      "description": "Add SEO metadata to product pages",
+      "type": "object",
+      "required": ["skipLazyLoadingSection"],
+      "properties": {
+        "skipLazyLoadingSection": {
+          "title": "Skip lazy loading",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
   }
 ]
