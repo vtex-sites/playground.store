@@ -8,16 +8,14 @@ export function CustomProductSEOSection() {
   const meta = product?.seo;
 
   return (
-    <section>
-      <ProductJsonLd
-        productName={meta.title}
-        description={meta.description}
-        brand={product.brand.name}
-        sku="TESTSKU"
-        gtin={product.gtin}
-        releaseDate={product.releaseDate}
-      />
-    </section>
+    <ProductJsonLd
+      productName={meta.title}
+      description={meta.description}
+      brand={product.brand.name}
+      sku="TESTSKU"
+      gtin={product.gtin}
+      releaseDate={product.releaseDate}
+    />
   );
 }
 
