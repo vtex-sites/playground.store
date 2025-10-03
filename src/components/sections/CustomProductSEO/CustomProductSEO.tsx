@@ -14,6 +14,9 @@ export function CustomProductSEOSection() {
       brand={product.brand.name}
       sku="TESTSKU"
       gtin={product.gtin}
+      images={product.image.map(
+        (img: { url: string; alternateName: string }) => img.url
+      )}
       releaseDate={product.releaseDate}
     />
   );
