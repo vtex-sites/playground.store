@@ -1,4 +1,7 @@
 module.exports = {
+  contentSource: {
+    type: 'CP',
+  },
   seo: {
     title: "FastStore Playground",
     description: "A fast and performant store framework",
