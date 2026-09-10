@@ -1,0 +1,20 @@
+type OrderSummary {
+  """
+  How many orders the signed-in shopper has placed.
+  """
+  totalOrders: Int!
+
+  """
+  Creation date of the most recent order, in ISO 8601 format.
+  Null when the shopper has not placed any order yet.
+  """
+  lastOrderDate: String
+}
+
+extend type Query {
+  """
+  Retrieve a summary of the signed-in shopper's orders.
+  The query takes no arguments: the shopper is identified by the request itself.
+  """
+  orderSummary: OrderSummary @cacheControl(scope: "private", sMaxAge: 0)
+}
