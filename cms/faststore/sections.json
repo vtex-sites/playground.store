@@ -5,7 +5,11 @@
       "title": "Alert with more Icon options",
       "description": "Add an alert that has more Icon options",
       "type": "object",
-      "required": ["icon", "content", "dismissible"],
+      "required": [
+        "icon",
+        "content",
+        "dismissible"
+      ],
       "properties": {
         "icon": {
           "type": "string",
@@ -61,7 +65,12 @@
       "title": "Alert with image",
       "description": "Add an Alert that has an Image as an icon",
       "type": "object",
-      "required": ["src", "alt", "content", "dismissible"],
+      "required": [
+        "src",
+        "alt",
+        "content",
+        "dismissible"
+      ],
       "properties": {
         "src": {
           "type": "string",
@@ -73,13 +82,22 @@
           "title": "Image alt text",
           "description": "Alt text for the Alert icon image"
         },
-        "content": { "type": "string", "title": "Content" },
+        "content": {
+          "type": "string",
+          "title": "Content"
+        },
         "link": {
           "title": "Link",
           "type": "object",
           "properties": {
-            "text": { "type": "string", "title": "Link Text" },
-            "to": { "type": "string", "title": "Action link" }
+            "text": {
+              "type": "string",
+              "title": "Link Text"
+            },
+            "to": {
+              "type": "string",
+              "title": "Action link"
+            }
           }
         },
         "dismissible": {
@@ -106,7 +124,9 @@
       "title": "Custom Newsletter",
       "description": "Allow users to subscribe to your updates",
       "type": "object",
-      "required": ["title"],
+      "required": [
+        "title"
+      ],
       "properties": {
         "icon": {
           "title": "Icon",
@@ -115,8 +135,12 @@
             "icon": {
               "title": "Icon",
               "type": "string",
-              "enumNames": ["Envelope"],
-              "enum": ["Envelope"],
+              "enumNames": [
+                "Envelope"
+              ],
+              "enum": [
+                "Envelope"
+              ],
               "default": "Envelope"
             },
             "alt": {
@@ -176,8 +200,16 @@
         "colorVariant": {
           "title": "Color variant",
           "type": "string",
-          "enumNames": ["Main", "Light", "Accent"],
-          "enum": ["main", "light", "accent"],
+          "enumNames": [
+            "Main",
+            "Light",
+            "Accent"
+          ],
+          "enum": [
+            "main",
+            "light",
+            "accent"
+          ],
           "default": "main"
         },
         "toastSubscribe": {
@@ -199,8 +231,12 @@
             "icon": {
               "title": "Icon",
               "type": "string",
-              "enumNames": ["CircleWavyCheck"],
-              "enum": ["CircleWavyCheck"],
+              "enumNames": [
+                "CircleWavyCheck"
+              ],
+              "enum": [
+                "CircleWavyCheck"
+              ],
               "default": "CircleWavyCheck"
             }
           }
@@ -224,13 +260,26 @@
             "icon": {
               "title": "Icon",
               "type": "string",
-              "enumNames": ["CircleWavyWarning"],
-              "enum": ["CircleWavyWarning"],
+              "enumNames": [
+                "CircleWavyWarning"
+              ],
+              "enum": [
+                "CircleWavyWarning"
+              ],
               "default": "CircleWavyWarning"
             }
           }
         }
       }
+    }
+  },
+  {
+    "name": "OrderSummary",
+    "schema": {
+      "title": "OrderSummary",
+      "description": "Shows the signed-in shopper a summary of their own orders",
+      "type": "object",
+      "properties": {}
     }
   }
 ]

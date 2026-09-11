@@ -1,0 +1,35 @@
+/**
+ * Plain CSS on purpose: `next.config.js` injects an `@import` before every
+ * SCSS module, and Sass requires `@use` to come before any other rule, so a
+ * `@use` here fails to compile. The FastStore design tokens are CSS custom
+ * properties, so they work without it.
+ * Tokens: https://developers.vtex.com/docs/guides/faststore/global-tokens-overview
+ */
+
+.section {
+  /* Same as the `layout-content` mixin from @faststore/ui, inlined so this
+     module does not need `@use`: aligns the section with the page grid. */
+  box-sizing: border-box;
+  width: calc(100% - var(--fs-grid-padding) - var(--fs-grid-padding));
+  max-width: var(--fs-grid-max-width);
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-spacing-1);
+  padding-block: var(--fs-spacing-5);
+}
+
+.title {
+  font-size: var(--fs-text-size-title-mini);
+  font-weight: var(--fs-text-weight-bold);
+}
+
+.count {
+  font-size: var(--fs-text-size-lead);
+}
+
+.date {
+  color: var(--fs-color-text-light);
+  font-size: var(--fs-text-size-body);
+}
