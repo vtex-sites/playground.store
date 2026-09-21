@@ -1,0 +1,7 @@
+# EXPERIMENT (branch test/sort-by-specification): extends the closed StoreSort
+# enum with a new value to check whether the core resolver actually uses it,
+# or silently falls back to default sorting because SORT_MAP (internal to
+# @faststore/api, not exported) has no entry for it.
+extend enum StoreSort {
+  clothesSize_desc
+}

@@ -11,7 +11,10 @@
     "test": "faststore test"
   },
   "dependencies": {
-    "@faststore/cli": "^4.1.1",
+    "@faststore/api": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/api",
+    "@faststore/cli": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/cli",
+    "@faststore/core": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/core",
+    "@faststore/sdk": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/sdk",
     "graphql": "^16.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

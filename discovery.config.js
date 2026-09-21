@@ -19,6 +19,13 @@ module.exports = {
     environment: "vtexcommercestable",
     hideUnavailableItems: true,
     incrementAddress: false,
+    // EXPERIMENT (branch test/sort-by-specification): registers the
+    // Intelligent Search sort string for the `clothesSize_desc` value added
+    // via `extend enum StoreSort` in
+    // src/graphql/vtex/typeDefs/sortByPropertyTest.graphql.
+    customSortMap: {
+      clothesSize_desc: "Clothes Size:desc",
+    },
   },
 
   // Default session
