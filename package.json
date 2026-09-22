@@ -11,10 +11,10 @@
     "test": "faststore test"
   },
   "dependencies": {
-    "@faststore/api": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/api",
-    "@faststore/cli": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/cli",
-    "@faststore/core": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/core",
-    "@faststore/sdk": "https://pkg.csb.dev/vtex/faststore/commit/85a3baf8/@faststore/sdk",
+    "@faststore/api": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/api",
+    "@faststore/cli": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/cli",
+    "@faststore/core": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/core",
+    "@faststore/sdk": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/sdk",
     "graphql": "^16.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -33,5 +33,11 @@
     "node": "24.11.0",
     "yarn": "1.19.1"
   },
-  "author": "VTEX"
+  "author": "VTEX",
+  "resolutions": {
+    "@faststore/api": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/api",
+    "@faststore/cli": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/cli",
+    "@faststore/core": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/core",
+    "@faststore/sdk": "https://pkg.csb.dev/vtex/faststore/commit/8f5a5c1a/@faststore/sdk"
+  }
 }
