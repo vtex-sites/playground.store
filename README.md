@@ -17,6 +17,10 @@ Here you'll find examples of the following features:
 - 👉 [API Extensions](#2-api-extensions)
   - [Adding Installment Information in the Product Details Page](#adding-installment-information-in-the-product-details-page)
   - [Adding a contact form to a landing page](#adding-a-contact-form-to-a-landing-page)
+- 👉 [FastStore Analytics](#3-faststore-analytics)
+  - [Implementing custom newsletter analytics events](#implementing-custom-newsletter-analytics-events)
+- 👉 [Redirects](#4-redirects)
+  - [Using code and Admin redirects together](#using-code-and-admin-redirects-together)
 
 ## 👩‍🏫 How to use this repository
 
@@ -105,6 +109,26 @@ This example explains how to track user subscriptions by implementing two custom
 
 - [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/analytics-implementing-custom-newsletter-analytics-events)
 - [➡️ Code Reference](https://github.com/vtex-sites/playground.store/tree/main/src/components/sections/CustomNewsletter)
+
+### [4. Redirects](https://developers.vtex.com/docs/guides/faststore/routing-managing-urls-with-redirects-and-rewrite-paths)
+
+FastStore supports redirects defined in code (`src/redirects.json`, based on Next.js redirects) and redirects managed in the VTEX Admin (`experimental.enableRedirects`). A store can use both at once.
+
+#### Using code and Admin redirects together
+
+This example keeps the redirects that need patterns in `src/redirects.json` and leaves fixed one-to-one redirects to the Admin, which has no limit on the number of rules. In `discovery.config.js`, the `redirects()` function loads `src/redirects.json`, and `experimental.enableRedirects` turns on the Admin lookup.
+
+- `/old-electronics/:path*` redirects any path under `/old-electronics` to `/electronics`. It's defined in `src/redirects.json`, since the Admin doesn't support wildcards.
+- `/old-laptop/p` redirects to `/jumper-ezbook-x3-windows-10-laptop/p`. It's a rule created in the Admin of the `playground` account, following [Managing URL redirects](https://help.vtex.com/tutorial/managing-url-redirects--3UJuFrU8imSVWg134mkvJV).
+
+Rules in `src/redirects.json` run first, for every route. FastStore looks up the Admin rules only when a product or collection path returns 404, so avoid Admin rules under a prefix that a wildcard in `src/redirects.json` already covers.
+
+To try it, run `yarn build && yarn start` and open `http://localhost:3000/old-electronics/anything` and `http://localhost:3000/old-laptop/p`.
+
+> Requires FastStore `4.7.0` or higher (v4) or `3.100.4` or higher (v3). In earlier versions, having a `src/redirects.json` file makes FastStore ignore the Admin redirects.
+
+- [📑 Documentation Reference - step by step guide](https://developers.vtex.com/docs/guides/faststore/routing-managing-urls-with-redirects-and-rewrite-paths#using-code-and-admin-redirects-together)
+- [➡️ Code Reference](https://github.com/vtex-sites/playground.store/blob/main/src/redirects.json)
 
 ## 🏷️ Naming Conventions in this Project
 

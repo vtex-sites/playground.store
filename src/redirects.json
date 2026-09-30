@@ -1,0 +1,7 @@
+[
+  {
+    "source": "/old-electronics/:path*",
+    "destination": "/electronics",
+    "permanent": true
+  }
+]
