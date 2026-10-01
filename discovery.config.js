@@ -86,9 +86,16 @@ module.exports = {
     gtmContainerId: "GTM-1234567",
   },
 
+  // Redirects that need patterns (wildcards or regex) live in src/redirects.json.
+  // Fixed one-to-one redirects are managed in the VTEX Admin (enableRedirects).
+  async redirects() {
+    return require("./src/redirects.json");
+  },
+
   experimental: {
     nodeVersion: 24,
     cypressVersion: 12,
+    enableRedirects: true,
   },
 
   vtexHeadlessCms: {
